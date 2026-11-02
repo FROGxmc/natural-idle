@@ -4,6 +4,8 @@ NaturalIdle 是一个**纯后处理工具**：它不生成画面、不训练模�
 
 可以把它理解成挂在任意数字人身上的一层「后期修饰」：输入动作数据，输出同结构、同帧数、仅叠加了自然微动的动作数据。
 
+在线产品页：NaturalIdle 官方产品页（doubao-html 发布）：https://4mdqyexd14k0m.doubao.link/app/app_17h88gm1qn0 —— 含统一卖点与合规边界说明。
+
 ## 它解决什么问题
 
 | AI 数字人常见的「AI 味」 | 成因 | NaturalIdle 怎么处理 |
