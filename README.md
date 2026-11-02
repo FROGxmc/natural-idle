@@ -44,6 +44,12 @@ python natural_idle.py -i input.csv --stats
 
 仓库内 `demo_out/` 已包含一组演示数据：`demo_input.csv`（机械的「AI 味」原始动作）与 `demo_output.csv`（叠加扰动后的结果），可以直接对比。浏览器打开 `demo.html` 可交互查看扰动前后曲线对比。
 
+### 演示视频
+
+约 27 秒的真实录屏，演示在浏览器中打开 `demo.html`、查看扰动前后双图表对比的实际效果：
+
+[media/NaturalIdle_demo_30s.mp4](./media/NaturalIdle_demo_30s.mp4)（1280×720，H.264）
+
 ### 输入 CSV 格式
 
 - 第一行为列名，后续每行一帧，值通常为 0~1（非 0~1 亦可用，扰动幅度按相对峰值计）。
@@ -100,6 +106,8 @@ natural-idle/
 │   ├── demo_output.csv
 │   └── plot.json
 ├── tools/build_demo_html.py    # 由 plot.json 重新生成 demo.html
+├── media/
+│   └── NaturalIdle_demo_30s.mp4  # demo.html 录屏演示（约27秒，1280×720）
 └── skill/SKILL.md             # 工具说明文档（含完整参数表与经验值）
 ```
 

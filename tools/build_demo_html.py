@@ -73,6 +73,7 @@ const DATA = __DATA__;
 """
 
 TPL_TAIL = """
+<script>
 /* 列分类（与 Python 版一致） */
 const KEYWORDS = {
   body:['body','spine','chest','torso','hip','pelvis'],
@@ -121,7 +122,7 @@ function applyPerturb(seq,cols,p){
   m.head.forEach(i=>{for(let t=0;t<n;t++)out[t][i]=clip(out[t][i]+nh[t]*p.head+nb[t]*p.head*hc,0,1);});
   m.face.forEach(i=>{for(let t=0;t<n;t++)out[t][i]=clip(out[t][i]+nf[t]*p.face,0,1);});
   m.mouth.forEach(i=>{for(let t=0;t<n;t++)out[t][i]=clip(out[t][i]+clip(nm[t]*p.mouth,-0.25,0.25),0,1);});
-  m.emotion.forEach(i=>{const w=1+0.2*ne[t];for(let t=0;t<n;t++)out[t][i]=clip(out[t][i]*w,0,p.emo);});
+  m.emotion.forEach(i=>{for(let t=0;t<n;t++){const w=1+0.2*ne[t];out[t][i]=clip(out[t][i]*w,0,p.emo);}});
   return out;
 }
 /* 初始化 */
